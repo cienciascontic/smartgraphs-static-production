@@ -1,1 +1,21 @@
 Built versions of Smartgraph activities. Ready to be deployed in public/static folder of smartgraphs.concord.org
+
+To add a build:
+
+1. In the root of the Smartgraphs repository, remove the directory tmp/build/static
+
+2. Run sc-build: `sc-build smartgraphs` (If you have updated any of the frameworks Smartgraphs depends on, such as SproutCore or RaphaelViews, run `sc-build -vcr smartgraphs` to recursively build updated versions of those frameworks as well)
+
+3. Copy files in tmp/build/static: `cp -r tmp/build/static ~/dev/smartgraphs-static-production`
+
+4. Remove any unused framework builds from this repo as you see fit, e.g., `find -name es -exec rm -rf '{}' \`
+
+5. Commit the added files to the repo.
+
+6. Copy any new or updated image assets from static/smartgraphs/en/<md5 hash>/resources/images to static/smartgraphs/en/current/resources/images
+
+7. Create a link to the new smartgraph file: `ln -s toplink.html static/smartgraphs/en/<md5 hash>/index.html'
+  
+8. Make sure everything works!
+
+9. To update smartgraphs.concord.org, just run 'git pull' in the appropriate place
