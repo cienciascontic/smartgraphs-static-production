@@ -10,7 +10,7 @@ body.sc-theme{background-color:#B4C0D7;overflow:hidden;}.sc-theme .app-loading{b
 .text-wrapper .text-field-view-wrapper,.sc-view.dialog-text .sc-radio-view{margin:10px;}
 .sc-view.hint{color:#666;font-style:italic;}.sc-view.dialog-text{margin:10px 0 10px 0;border:1px solid #ccc;background-color:#EFEDDD;}
 .sc-view.dialog-text .sc-view{color:black;font-size:14px;}.sc-theme .sc-label-view.pane-label{font-size:18px;line-height:1.0;color:#666;}
-.sc-theme .sc-label-view.sensor-message{font-size:24px;font-style:italic;line-height:1.0;color:#666;background-image:url('/static/smartgraphs/en/9a20b3456b8ad101cd2b9649ba72431a404d24da/resources/images/small_loading_icon.gif');background-repeat:no-repeat;background-position:left top;}
+.sc-theme .sc-label-view.sensor-message{font-size:24px;font-style:italic;line-height:1.0;color:#666;background-image:url('/static/smartgraphs/en/f637723c38eb4ba36d49edd5cdc05925ca609ec3/resources/images/small_loading_icon.gif');background-repeat:no-repeat;background-position:left top;}
 .smartgraph-table .sc-list-item-view.sc-regular-size{font-size:16px;}.smartgraph-table .sc-label-view.sc-regular-size{font-size:16px;}
 .smartgraph-table .sc-view.table-background{background-color:#eee;border:1px solid #ccc;z-index:1;}
 .smartgraph-table .sc-view.table-background.table-background-top{background-color:#eee;border-bottom-width:0;z-index:2;}
@@ -19,7 +19,7 @@ body.sc-theme{background-color:#B4C0D7;overflow:hidden;}.sc-theme .app-loading{b
 .sc-theme .sc-view.ace.sc-radio-view.sc-static-layout .sc-radio-button{height:auto;}
 .sc-theme .sc-view.ace.sc-radio-view.sc-static-layout .sc-button-label{position:static;margin-left:5px;display:block;}
 .sc-theme .sc-view.dialog-text .sc-view.ace.sc-radio-view span.button{top:2px;}.sc-theme .sc-view.ace.sc-split-divider-view{background-color:#ddd;}
-.safari .sc-view .ace.sc-text-field-view.focus{outline:auto 7px -webkit-focus-ring-color;outline-offset:-2px;}
+.sc-view.sg-overflow-fix{overflow:visible;}.safari .sc-view .ace.sc-text-field-view.focus{outline:auto 7px -webkit-focus-ring-color;outline-offset:-2px;}
 .mozilla .sc-view .ace.sc-text-field-view.focus{outline-color:-moz-mac-focusring;outline-offset:-1px;outline-style:solid;outline-width:1px;}
 .msie .sc-view .ace.sc-text-field-view.focus{outline:1px dotted;}.sc-text-field-view .border{position:absolute;top:0;left:0;bottom:0;right:0;}
 .mozilla .sc-view .ace.sc-text-field-view .border{-moz-appearance:none;}.msie .sc-view .ace.sc-text-field-view .border{border:1px transparent;}
