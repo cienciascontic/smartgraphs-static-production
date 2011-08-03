@@ -10,7 +10,7 @@ body.sc-theme{background-color:#B4C0D7;overflow:hidden;}.sc-theme .app-loading{b
 .text-wrapper .text-field-view-wrapper,.sc-view.dialog-text .sc-radio-view{margin:10px;}
 .sc-view.hint{color:#666;font-style:italic;}.sc-view.dialog-text{margin:10px 0 10px 0;border:1px solid #ccc;background-color:#EFEDDD;}
 .sc-view.dialog-text .sc-view{color:black;font-size:14px;}.sc-theme .sc-label-view.pane-label{font-size:18px;line-height:1.0;color:#666;}
-.sc-theme .sc-label-view.sensor-message{font-size:24px;font-style:italic;line-height:1.0;color:#666;background-image:url('/static/smartgraphs/en/75c3d27971f124ade5c6795200defb4ae6d45722/resources/images/small_loading_icon.gif');background-repeat:no-repeat;background-position:left top;}
+.sc-theme .sc-label-view.sensor-message{font-size:24px;font-style:italic;line-height:1.0;color:#666;background-image:url('/static/smartgraphs/en/e577fdc9bdb9cba267f647f56a80b754f7d12079/resources/images/small_loading_icon.gif');background-repeat:no-repeat;background-position:left top;}
 .smartgraph-table .sc-list-item-view.sc-regular-size{font-size:16px;}.smartgraph-table .sc-label-view.sc-regular-size{font-size:16px;}
 .smartgraph-table .sc-view.table-background{background-color:#eee;border:1px solid #ccc;z-index:1;}
 .smartgraph-table .sc-view.table-background.table-background-top{background-color:#eee;border-bottom-width:0;z-index:2;}
