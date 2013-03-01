@@ -4011,7 +4011,7 @@ if(b===SC.CONTENT_SET_DIRECTLY){return}if(SC.typeOf(b)===SC.T_STRING&&b.length>0
 }.observes("contentView")});sc_require("views/view");sc_require("mixins/control");
 SC.IMAGE_STATE_NONE="none";SC.IMAGE_STATE_LOADING="loading";SC.IMAGE_STATE_LOADED="loaded";
 SC.IMAGE_STATE_FAILED="failed";SC.IMAGE_STATE_SPRITE="sprite";SC.BLANK_IMAGE_DATAURL="data:image/gif;base64,R0lGODlhAQABAJAAAP///wAAACH5BAUQAAAALAAAAAABAAEAAAICBAEAOw==";
-SC.BLANK_IMAGE_URL=SC.browser.msie&&SC.browser.msie<8?"/static/sproutcore/foundation/en/1e3562c3eded0e237a64955cae12d1a7789e90d1/blank.gif":SC.BLANK_IMAGE_DATAURL;
+SC.BLANK_IMAGE_URL=SC.browser.msie&&SC.browser.msie<8?"/static/sproutcore/foundation/en/1e3562c3eded0e237a64955cae12d1a7789e90d1/source/blank.gif":SC.BLANK_IMAGE_DATAURL;
 SC.ImageView=SC.View.extend(SC.Control,{classNames:"sc-image-view",tagName:"img",status:SC.IMAGE_STATE_NONE,value:null,useImageCache:YES,canLoadInBackground:NO,localize:YES,displayProperties:"status toolTip".w(),render:function(c,f){var a=this.get("status"),d=this.get("value");
 if(a===SC.IMAGE_STATE_NONE&&d){this._image_valueDidChange()}a=this.get("status");
 var e=(a===SC.IMAGE_STATE_LOADED)?d:SC.BLANK_IMAGE_URL;if(a===SC.IMAGE_STATE_SPRITE){c.addClass(d)
@@ -4150,8 +4150,7 @@ this.enableAnimation();this.invokeLater("transform",10,0)},buildOutNavigation:fu
 this.transform(this.get("buildDirection")===SC.TO_LEFT?-a.width:a.width)},buildIn:function(){this.buildInNavigation()
 },buildOut:function(){this.buildOutNavigation()},resetBuild:function(){this.transform(0)
 },navigationBuildDidFinish:function(){if(this.isBuildingIn){this.buildInDidFinish()
-}else{if(this.isBuildingOut){this.buildOutDidFinish()}}}};SC.Scrollable={initMixin:function(){console.warn("SC.Scrollable is deprecated and will be removed in a future version of SproutCore.  Consider pulling the mixin into your own app if you want to keep using it.")
-},isScrollable:true,verticalLineScroll:20,horizontalLineScroll:20,verticalPageScroll:function(){return this.get("innerFrame").height
+}else{if(this.isBuildingOut){this.buildOutDidFinish()}}}};SC.Scrollable={isScrollable:true,verticalLineScroll:20,horizontalLineScroll:20,verticalPageScroll:function(){return this.get("innerFrame").height
 }.property("innerFrame"),horizontalPageScroll:function(){return this.get("innerFrame").width
 }.property("innerFrame"),hasVerticalScroller:function(){return this.get("scrollFrame").height>this.get("innerFrame").height
 }.property("scrollFrame"),hasHorizontalScroller:function(){return this.get("scrollFrame").width>this.get("innerFrame").width
@@ -4379,8 +4378,7 @@ if(a){a.performAction()}return YES},performAction:function(){if(!this.get("isEna
 this.invokeLater(this.flashHighlight,25);this.invokeLater(this.sendAction,150)}return YES
 },sendAction:function(){var c=this.getContentProperty("itemActionKey"),d=this.getContentProperty("itemTargetKey"),b=this.getPath("parentMenu.rootMenu"),a;
 this.getPath("parentMenu.rootMenu").remove();b._isFlashing=NO;c=(c===undefined)?b.get("action"):c;
-d=(d===undefined)?b.get("target"):d;b.set("selectedItem",this.get("content"));if(SC.typeOf(c)===SC.T_FUNCTION){c.apply(d,[b]);
-SC.Logger.warn("Support for menu item action functions has been deprecated. Please use target and action.")
+d=(d===undefined)?b.get("target"):d;b.set("selectedItem",this.get("content"));if(SC.typeOf(c)===SC.T_FUNCTION){c.apply(d,[b])
 }else{a=this.getPath("pane.rootResponder")||SC.RootResponder.responder;if(a){a.sendAction(c,d,this)
 }}},flashHighlight:function(){var a=this._flashCounter,b=this.$();if(a%2===0){b.addClass("focus")
 }else{b.removeClass("focus")}if(a<=2){this.invokeLater(this.flashHighlight,50);this._flashCounter++
